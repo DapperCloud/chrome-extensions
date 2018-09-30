@@ -14,7 +14,8 @@ function runParsing(callback) {
 
 function parsePage() {
 	let titleBlock = document.querySelector("div[data-qa-id='adview_title']").innerText.split("\n");
-	let phoneNumber = document.querySelector( "div[data-qa-id='adview_button_phone_contact']").innerText.split("\n")[0];
+	let phoneQuery = "div[data-qa-id='adview_button_phone_contact']";
+	let phoneNumber = document.querySelector(phoneQuery) ? document.querySelector(phoneQuery).innerText.split("\n")[0] : "?";
 
     return {
     	appartement: titleBlock[0],

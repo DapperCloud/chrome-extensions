@@ -1,6 +1,6 @@
 {
   "name": "Coloc Duku LBC parser",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Extrait les données d'une annonce LeBonCoin et les copie dans le presse-papier.",
   "background": {
     "scripts": ["background.js"],
@@ -14,9 +14,7 @@
   },
   "permissions" : [
     "declarativeContent",
-    "activeTab",
-    "storage",
-    "<all_urls>"
+    "activeTab"
   ],
   "icons" : {
     "48" : "icon-48.png",
